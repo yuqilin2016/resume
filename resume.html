@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人简历</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- <link href="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"> -->
+	<style>
+		html {
+			display: flex;
+			justify-content: center;
+		}
+		body {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			width: 794px;
+		}
+		.basic, .detail {
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+		}
+		.part1 {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			/*align-items: flex-start;*/
+			width: 100%;
+			/*height: 227px;*/
+		}
+		.imgWrapper {
+			display: flex;
+			align-items: center;
+		}
+		.equal {
+			display: flex;
+			align-items: center;
+			font-size: 2rem;
+		}
+		.desc {
+			display: flex;
+			align-items: center;
+		}
+		.brace {
+			font-size: 1.8rem;
+		}
+		pre {
+			line-height: 22px;
+			/*font-weight: 700;*/
+			font-size: 1.3rem;
+		}
+		.part2 {
+			width: 100%;
+		}
+		.table {
+		  width: 100%;
+		  margin-bottom: 1rem;
+		  background-color: transparent;
+		}
+		.table th,
+		.table td {
+		  padding: 0.75rem;
+		  vertical-align: middle;
+		  border-top: 1px solid #dee2e6;
+		}
+		.title, .demo {
+			width: 70px;
+		}
+		.tech {
+			width: 170px;
+		}
+		.project {
+			width: 280px;
+			text-align: justify;
+		}
+		a {
+			text-decoration: none;
+		}
+		a:hover {
+			color: tomato;
+		}
+		@media print {
+			.demo {
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+<h1>于麒麟的简历</h1>
+<div class="basic">
+	<h3>基本信息</h3>
+</div>
+
+<div class="part1">
+	<div class="imgWrapper">
+		<img src="photo2.jpg" alt="头像">
+	</div>
+	<div class="equal">=</div>
+	<div class="desc">
+	<pre>
+	<span class="brace">{</span>
+		姓	  名: 于麒麟
+		出生年月: 1994-02
+		毕业学校: 哈尔滨工业大学
+		主要技能: JavaScript(ES6)、CSS3
+		项目经验: 项目详细
+		电	  话：185-0281-7490
+		Github  : <a href="https://github.com/yuqilin2016">https://github.com/yuqilin2016</a>
+		个人优势: 学习能力
+	<span class="brace">}</span>
+	</pre>
+	</div>
+</div>
+<div class="detail">
+	<h3>项目详细</h3>
+</div>
+<div class="part2">
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>项目名称</th>
+				<th>项目类型</th>
+				<th>主要技术栈</th>
+				<th>项目介绍</th>
+				<th class="demo">项目地址</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="title">商场后台管理系统</td>
+				<td>企业项目</td>
+				<td class="tech">Vue Vuex Vue-Router Axios Element-UI</td>
+				<td class="project">该项目是一个管理系统，核心逻辑包括商铺、商家、合同、费用等的管理。
+				我主要负责其中的基础维护和费用管理模块，主要用到的技术点有：Element-UI中tree
+				组件来增删查改部门数据，table组件来分页展示费用单列表以及批量确认收费，利用CSS
+				控制打印催收单的样式，利用Vue中filter来将后台返回代码解析为文本等。
+				</td>
+				<td class="demo">
+					<a href="https://mp.scmdfdckfyxgs.vip" target="_blank">在线预览</a>
+					<!-- <a href="">Github</a> -->
+				</td>
+			</tr>
+			<tr>
+				<td class="title">在线五子棋对战</td>
+				<td>个人项目</td>
+				<td>Node.js Socket.io Canvas</td>
+				<td class="project">这个练习项目主要使用node.js和sockit.io在服务器端检测是否有两个不同用户登陆到同一个
+				房间号，满足条件会开始双人五子棋游戏。客户端主要使用canvas来绘制棋盘和棋子，并向服务器
+				发送每次的落子信息，服务器来判断是否满足胜利条件，不满足则交换落子权利。
+				</td>
+				<td class="demo">
+					<a href="https://gobang-online.herokuapp.com/">在线预览</a>
+					<a href="https://github.com/yuqilin2016/Gobang-online">Github</a>
+				</td>
+			</tr>
+			<tr>
+				<td>看什么电影</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>在线聊天室</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
